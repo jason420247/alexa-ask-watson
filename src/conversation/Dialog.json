@@ -1,0 +1,21 @@
+{
+	"output": {
+    "text": "What's the name of the @Beverage ?"
+  },
+	{ “context”: {
+		“beverage” : ”<?@Beverage?>"
+	}
+}
+
+{'version': '1.0', 'response': 
+	{'outputSpeech': 
+		{'text': '["Welcome to ButlerCarlos. Beer, Liquor and Wine delivered to you in less than an hour. Do you already have an account?"]', 'type': 'PlainText'},
+		 'shouldEndSession': False, 
+		 'card': {'content': '', 'subtitle': '', 'type': 'Simple', 'title': ''}}, 
+		 'sessionAttributes' : {'user': 
+		 	{'name': 'AxonTrusts'}, 
+		 'context': set(['{"conversation_id": "da059e70-a29b-4562-8be7-949d24d08dde",
+		  "system": {"dialog_turn_counter": 1,
+		  "dialog_stack": [{"dialog_node": "node_1_1477454111776"}], 
+		  "dialog_request_counter": 1}}'])
+		 }} 

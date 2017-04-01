@@ -1,0 +1,16 @@
+{
+  "intents": [
+    {
+      "intent": "DrinkIntent",
+      "slots": [
+        {
+          "name": "Phrase",
+          "type": "LIST_OF_PHRASES"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    }
+  ]
+}

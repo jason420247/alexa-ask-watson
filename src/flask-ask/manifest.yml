@@ -1,0 +1,12 @@
+---
+applications:
+- name: alexaskwatson
+  memory: 128M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/python-buildpack
+  path: .
+cmfconversation:
+  label:conversation
+  plan:free
+services:
+- cmfconversation
