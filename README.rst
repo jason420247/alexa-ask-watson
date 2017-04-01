@@ -31,37 +31,37 @@ Create your cogntive application using Flas and Watson Conversational Service
 
     `Sign up on Bluemix.net <www.bluemix.net>'_ , or use an existing account. Runtimes are free to try for one month.
 
-2. Download and install the [Cloud-foundry CLI][cloud_foundry] command line interface (CLI)
+2. Download and install the `Cloud-foundry command line interface CLI <https://console.ng.bluemix.net/docs/cli/index.html#cli>`_ 
 
 3. Clone this repository down to your local desktop
 
 4. Edit the `manifest.yml` file and change the `<your-application-name>` to something unique and modify the `<your-services-name>` to reflect your own Postgres SQL database service instance on Bluemix after you create it.  The name you use, will determinate your application url initially, e.g. `<application-name>.mybluemix.net`.
 
-4. Connect to Bluemix in the command line tool
+5. Connect to Bluemix in the command line tool
 
     $ cf api https://api.ng.bluemix.net
 
     $ cf login -u <your user ID>
 
-5. Create the `Watson Conversation Service in `Bluemix <https://console.ng.bluemix.net/catalog/services/conversation?taxonomyNavigation=services>`_  free plan using the Bluemix CLI
+6. Create the `Watson Conversation Service in `Bluemix <https://console.ng.bluemix.net/catalog/services/conversation?taxonomyNavigation=services>`_  free plan using the Bluemix CLI
 
     $ cf create-service conversation free <your-service-name>
     
 
-6.  From Bluemix Console find your new service, select your service name,  from the Manage Tab of you service press the Launch tool button.
+7.  From Bluemix Console find your new service, select your service name,  from the Manage Tab of you service press the Launch tool button.
 
-7.  Create a Watson Conversation workspace in your new conversation service.  I called mine WineSelector.  Follow directions `here: <https://www.ibm.com/watson/developercloud/doc/conversation/create-workspace.html>`_ 
+8.  Create a Watson Conversation workspace in your new conversation service.  I called mine WineSelector.  Follow directions `here: <https://www.ibm.com/watson/developercloud/doc/conversation/create-workspace.html>`_ 
 
-8.  Import the Workspace provided with this repository example.  Follow directions `here: <https://www.ibm.com/watson/developercloud/doc/conversation/create-workspace.html>`_  Section titled "Importing, exporting, and copying workspaces"
+9.  Import the Workspace provided with this repository example.  Follow directions `here: <https://www.ibm.com/watson/developercloud/doc/conversation/create-workspace.html>`_  Section titled "Importing, exporting, and copying workspaces"
 
-9.  From workspace tile click on view details and copy the Workspace ID.  It will look something like:  55981191-57ee-4def-8402-c586x126f174
+10.  From workspace tile click on view details and copy the Workspace ID.  It will look something like:  55981191-57ee-4def-8402-c586x126f174
 
-9. Modify ./flask-ask/ask_watson.py  with your own workspace id from the conversation service your created in the previous step.
+11. Modify ./flask-ask/ask_watson.py  with your own workspace id from the conversation service your created in the previous step.
 
     # replace with your own workspace_id
     workspace_id = '83550e3c-2b1b-4404-9748-7729816277c6'
 
-6. Push your application to bluemix!  Check to make sure your app is running in the Bluemix Console.
+12. Push your application to bluemix!  Check to make sure your app is running in the Bluemix Console.
 
     $ cd .\flask-ask
 
