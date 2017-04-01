@@ -37,13 +37,16 @@ Create your cogntive application using Flas and Watson Conversational Service
 
 4. Connect to Bluemix in the command line tool
     ```sh
+
     $ cf api https://api.ng.bluemix.net
+
     $ cf login -u <your user ID>
      ```
 
 5. Create the `Watson Conversation Service in Bluemix<https://console.ng.bluemix.net/catalog/services/conversation?taxonomyNavigation=services/>` free plan using the Bluemix CLI
 
     ```sh
+
     $ cf create-service conversation free <your-service-name>
     ```
 
@@ -62,10 +65,12 @@ Create your cogntive application using Flas and Watson Conversational Service
 
 6. Push your application to bluemix!  Check to make sure your app is running in the Bluemix Console.
 
-    ```sh
+    sh
+
     $ cd .\flask-ask
+
     $ cf push
-    ```
+    
 
 Create your Watson Conversation Skill in Amazon Alexa Voice Service Developer Portal
 ------------------------------------------------------------------------------------
@@ -90,13 +95,14 @@ Create your Watson Conversation Skill in Amazon Alexa Voice Service Developer Po
 
 10.  Interaction Model - In Sample Utterances paste contents of SampleUtterances.json in folder speech_assets
 
-11.  Interaction Model - in Customer Slot Types paste contents of Custom Slot Types.txt  Press Add
+11.  Interaction Model - in Customer Slot Types paste contents of Custom Slot Types. Press Add
 
-12.  Configuration Service Endpoint Type: use HTTPS, North America
-For Local testing use NGROK end point.
-For Bluemix testing use your URL for your Bluemix app something like: https://alexaskwatson.mybluemix.net/
+12.  Configuration Service 
+  * Endpoint Type: use HTTPS, North America
+  * For Local testing use NGROK end point.
+  * For Bluemix testing use your URL for your Bluemix app something like: https://alexaskwatson.mybluemix.net/
 
-13.  SSL Certificate -  My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority  Press Next
+13.  SSL Certificate -  My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority.  Press Next
 
 14. Registering an Alexa-enabled Device for Testing: https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/testing-an-alexa-skill
 
@@ -115,28 +121,32 @@ The Basics
 3.  Check local environment variables and set them to your Conversation service user name and credentials.  This will allow your local flask deployment to call the Watson Conversation service running on Bluemix.    Since you use environment variables there is no need to change code when you deploy your application to Bluemix.
 
     $ printenv
+
     $ vi ~/.bash_profile
 
-    .. code-block:: 
-    VCAP_SERVICES='{"conversation": [{"credentials": {"url": "https://gateway.watsonplatform.net/conversation/api","password": "your password here","username": "your user name here"},"syslog_drain_url": null,"label": "conversation","provider": null,"plan": "free","name": "Conversation-de","tags": ["watson","ibm_created"]}]}'
+    VCAP_SERVICES='{"conversation": [{"credentials": {"url": "https://gateway.watsonplatform.net conversation/api","password": "your password here","username": "your user name here"},"syslog_drain_url": null,"label": "conversation","provider": null,"plan": "free","name": "Conversation-de","tags": ["watson","ibm_created"]}]}'
     export VCAP_SERVICES
     VCAP_APP_PORT=8080
 
     $:wq! 
 
 4. Start the Flask Ask Skill locally. Start new Terminal window.
-$python alexaskwatson.py
+    $python alexaskwatson.py
 
 5. If you run three more than one time.  You likely have a port in use.  To trouble shooting ports for previous launches of Flask locally on 5000
+
     $ lsof -i :5000
 or
+
     $ ps -fA | grep python 
+
     $ kill -9 "process id of running service" 
 
 4.  Start NGrock  
+
     $ ./ngrok http 5000
 
-5. Copy url something like https://43b0d1dfc.ngrok.io  past it in AWS Skill Configuration.
+5.  Copy url something like https://43b0d1dfc.ngrok.io  past it in AWS Skill Configuration.
 
 6.  Test your skill like in steps 11 and 12 in previous section.
 
