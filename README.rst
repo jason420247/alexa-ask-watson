@@ -1,7 +1,7 @@
-Use the Amazon Echo & Dot with Python and Watson Conversation Service
-=====================================================================
+Use the Amazon Echo & Dot with the Watson Conversation Service
+==============================================================
 
-This project enables you to quickly create an Alex Skill that is able to work with `Watson Conversation Service <https://www.ibm.com/watson/developercloud/conversation.html>`_
+This Alexa-Ask-Watson project enables you to quickly create an Alex Skill that is able to work with `Watson Conversation Service <https://www.ibm.com/watson/developercloud/conversation.html>`_
 
 This sample Python project allows you to create an Alex Skill that will send all the utterances made to your Alexa Dot or Echo as text to Watson Conversation service.  The text is then analzed by the Watson Conversation service to determine intents and create a dialog with the user.
 
@@ -29,7 +29,7 @@ Create your cogntive application using Flas and Watson Conversational Service
 
 1. Create a Bluemix Account
 
-    Sign up on Bluemix.net, or use an existing account. Runtimes are free to try for one month.
+    `Sign up on Bluemix.net <www.bluemix.net>'_ , or use an existing account. Runtimes are free to try for one month.
 
 2. Download and install the [Cloud-foundry CLI][cloud_foundry] command line interface (CLI)
 
@@ -71,7 +71,7 @@ Create your cogntive application using Flas and Watson Conversational Service
 Create your Watson Conversation Skill in Amazon Alexa Voice Service Developer Portal
 ------------------------------------------------------------------------------------
 
-1. Create your `AWS Account<http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/AboutAWSAccounts.html>`_
+1. Create your `AWS Account <http://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/AboutAWSAccounts.html>`_ 
 
 2. Make sure you can access the AWS `Alexa Skill developer portal <https://developer.amazon.com/edw/home.html#>`_
 
@@ -147,8 +147,8 @@ or
 6.  Test your skill like in steps 11 and 12 in previous section.
 
 
-☤ Thank You
-------------
+Thank You
+---------
 Feel free to `open an issue <https://github.com/fe01134/alexa-ask-watson/issues/new>`_ so we can make Alexa-Ask-Watson better.
 
 Special thanks to `@johnwheeler <https://github.com/johnwheeler>`_ for his Ask-Flask project starter
