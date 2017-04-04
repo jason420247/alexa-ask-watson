@@ -25,7 +25,7 @@ Get Started with Python and Flask
 
 Get Started with Bluemix
 ------------------------
-Create your cogntive application using Flas and Watson Conversational Service
+Create your cogntive application using Flask and Watson Conversational Service
 
 1. Create a Bluemix Account
 
