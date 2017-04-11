@@ -3,7 +3,7 @@ Use the Amazon Echo & Dot with the Watson Conversation Service
 
 This Alexa-Ask-Watson project enables you to quickly create an Alex Skill that is able to work with `Watson Conversation Service <https://www.ibm.com/watson/developercloud/conversation.html>`_
 
-This sample Python project allows you to create an Alex Skill that will send all the utterances made to your Alexa Dot or Echo as text to Watson Conversation service.  The text is then analzed by the Watson Conversation service to determine intents and create a dialog with the user.
+This sample Python project allows you to create an Alexa Skill that will send all the utterances made to your Alexa Dot or Echo as text to Watson Conversation service.  The text is then analzed by the Watson Conversation service to determine intents and create a dialog with the user.
 
 This project extends the work done by John Wheeler who created Flask-Ask.  Flask-Ask is a `Flask extension <http://flask.pocoo.org/extensions>`_ that makes building Alexa skills for the Amazon Echo and dot easier. Get started with the `Flask-Ask quickstart <https://alexatutorial.com/flask-ask>`_ 
 
