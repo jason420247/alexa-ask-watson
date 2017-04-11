@@ -106,8 +106,8 @@ Create your Watson Conversation Skill in Amazon Alexa Voice Service Developer Po
 "Alexa ask `your skill name` I want a drink"
 
 
-The Basics
--------------
+Test your skill locally using Alexa Dot
+----------------------------------------
 
 1.  To run your Alexa Ask Watson locally, setup your local enviornment
 
